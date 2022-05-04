@@ -23,6 +23,8 @@ public class custom_order {
 	    String guarnizione;
 	    String input;
 	    int numeroCupcake;
+	    int totale;
+	String aggiungiAllaLista;
 	    
 	    double costo= 15.00;
 	    final double TAX_RATE= .08;
@@ -59,23 +61,32 @@ public class custom_order {
 		System.out.println("Cocco";
 		System.out.println("Frutti di bosco");
 	   glassa=Scanner.nextLine;
+	     if (glassa != "no"){
+  aggiungiElementi(glassa,2);
+  aggiungiAllaLista+=", ";
 	    System.out.println("Inserisci il ripierno: ");
 	    System.out.println("Mocha");
 	    System.out.println("Menta");		   
 	    System.out.println("Limone");
 	    System.out.println("Cioccolato");
-		ripeino=Scanner.nextLine;		 
+		ripieno=Scanner.nextLine;
+		  if (ripieno != "no"){
+  aggiungiElementi(ripieno,2);
+  aggiungiAllaLista+=", ";
 	    break;
 	    case 2: 
 	    System.out,println("Quanti cupcake desideri?");
 	    numeroCupcake=Scanner.nextInt;
 		System.out.println("\n");
-		System.out.println("Indica la glassa per i tuoi cupcake");
+		System.out.println("Indica la guarnizione per i tuoi cupcake");
 		System.out.println("Mocha");
 	    	System.out.println("Menta");		   
 	   	System.out.println("Limone");
-	    	System.out.println("Cioccolato")
-		guarnizione=Scanner.nextLine;		   ;		   
+	    	System.out.println("Cioccolato");
+		guarnizione=Scanner.nextLine;
+		  if (guarnizione != "no"){
+  aggiungiElementi(guarnizione,2);
+  aggiungiAllaLista+=", ";	   
 	    break;
 	    case 3:
 	    System.out.println("Grazie per aver visitato lo shop. A presto !.");
@@ -106,5 +117,12 @@ public class custom_order {
 	tax= costo*TAX_RATE;
   System.out.println("Il valore delle tasse è: "+ tax);	
   System.out.println("Il totale del tuo ordine è: "+ (tax+costo));			   
-    }   
+    }  
+    static void aggiungiElementi(String elementi, int costo) {
+  totale+=cost;
+  aggiungiAllaLista+=elementi;
+  
+
+}
+}
 }
