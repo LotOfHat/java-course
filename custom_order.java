@@ -122,7 +122,7 @@ public class custom_order {
   totale+=cost;
   aggiungiAllaLista+=elementi;
   
-
+System.out.println("Totale aquisti: "+ totale);
 }
 }
 }
